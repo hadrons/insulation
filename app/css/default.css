@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+.view-animate.ng-enter,
+.view-animate.ng-leave {
+  -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s;
+  display: block;
+  width: 100%;
+  border-left: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+.view-animate.ng-enter {
+  left: 100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left: 0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left: -100%;
+}
+* {
+  text-rendering: optimizeLegibility;
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+}
+body {
+  background-color: #000;
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+#main {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  text-align: left;
+}
+.menu-options {
+  cursor: pointer;
+}
+#terminal {
+  border: 1px solid white;
+  border-radius: 4px;
+  display: inline-block;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  overflow: hidden;
+  background-color: rgb(25, 25, 25);
+}
+#terminal #display {
+  width: 780px;
+  height: 555px;
+  padding: 10px;
+  background-color: rgb(25, 25, 25);
+  text-align: left;
+  vertical-align: bottom;
+  position: relative;
+}
+#terminal #display div.output {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#terminal #display div.output div.line {
+  min-height: 20px;
+  max-width: 780px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+#terminal input {
+  width: 780px;
+  height: 20px;
+  background-color: rgb(25, 25, 25);
+  margin: 0;
+  padding: 0 10px 0 10px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+}
+span.big {
+  font-size: 20px;
+}
+span.red {
+  color: #bf1f1f;
+}
+span.yellow {
+  color: #c4ad2c;
+}
+span.cyan {
+  color: cyan;
+}
+span.green {
+  color: #65c314;
+}
+span.magenta {
+  color: #fa42ff;
+}
+span.gray {
+  color: #919191;
+}

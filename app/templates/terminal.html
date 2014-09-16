@@ -1,0 +1,6 @@
+<div ng-controller="TerminalCtrl">
+  <div id="terminal">
+    <div id="display"><div class="output" ng-bind-html="output"></div></div>
+    <input type="text" ng-change="getInput()" ng-enter="readMe(this)" ng-model="input">
+  </div>
+</div>
